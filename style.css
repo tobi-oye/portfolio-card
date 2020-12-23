@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Kumbh";
+  src: url(https://fonts.google.com/specimen/Kumbh+Sans);
+  font-style: normal;
+}
+body {
+  font-family: "Kumbh";
+}
+.box {
+  /* border: 1px solid black; */
+}
+
+hr {
+  margin-left: 0;
+  margin-right: 0;
+  opacity: 0.2;
+}
+@media screen and (min-width: 1440px) {
+  .top-circle {
+    position: absolute;
+    left: -220px;
+    top: -500px;
+  }
+  .bottom-circle {
+    position: absolute;
+    left: 600px;
+    top: 450px;
+  }
+  .test-svg {
+    z-index: 1;
+  }
+  .container {
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+  }
+  .profile-container {
+    margin: 10px;
+    /* height: 150px; */
+    /* flex-basis: 30%; */
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    background-color: white;
+    margin: 200px;
+    z-index: 0;
+  }
+  .profile-svg {
+    z-index: 0;
+  }
+  .top-background,
+  .pic-container {
+    flex-basis: 100%;
+  }
+  .top-background {
+    height: 200px;
+  }
+  svg,
+  .top-background {
+    border-radius: 0.5em 0.5em 0 0;
+  }
+  .pic-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 300px;
+    right: 600px;
+  }
+  .pic {
+    /* background-color: red; */
+    background: url("images/image-victor.jpg");
+    border-radius: 50%;
+    border: 10px solid white;
+    flex-basis: 30%;
+    width: 280px;
+    height: 99px;
+  }
+  .grey-text,
+  span {
+    color: grey;
+    font-weight: 400px;
+  }
+  .footer-info {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .text-info {
+    text-align: center;
+  }
+  .main-text {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .grey-text {
+    font-size: 12px;
+  }
+}

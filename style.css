@@ -26,21 +26,23 @@ hr {
   align-items: center;
   overflow: hidden;
   min-height: 100vh;
+  position: relative;
 }
 .top-circle {
-  margin-left: -1000px;
-  margin-top: -625px;
+  position: absolute;
+  left: -720px;
+  top: -610px;
 }
 .bottom-circle {
-  margin-bottom: -915px;
-  margin-right: -840px;
+  position: absolute;
+  right: -710px;
+  bottom: -605px;
 }
 .test-svg {
   z-index: 1;
 }
 
 .profile-container {
-  margin-top: -265px;
   /* height: 150px; */
   /* flex-basis: 30%; */
   border-radius: 0.5em;
@@ -48,7 +50,7 @@ hr {
   flex-direction: column;
   /* flex-wrap: wrap; */
   background-color: white;
-  width: 350px;
+  /* width: 350px; */
   z-index: 0;
 }
 .profile-svg {
@@ -59,7 +61,11 @@ hr {
   flex-basis: 100%;
 }
 .top-background {
-  height: 200px;
+  /* height: 200px; */
+}
+.svg-background,
+.profile-container {
+  width: 333px;
 }
 .svg-background,
 .top-background {
@@ -104,5 +110,35 @@ span {
 .grey-text {
   font-size: 12px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 700px) {
+  .top-circle {
+    position: absolute;
+    left: -300px;
+    top: -500px;
+  }
+  .bottom-circle {
+    position: absolute;
+    right: -300px;
+    bottom: -600px;
+  }
+  .svg-background,
+  .profile-container {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 1439px) {
+  .top-circle {
+    position: absolute;
+    left: -300px;
+    top: -500px;
+  }
+  .bottom-circle {
+    position: absolute;
+    right: -300px;
+    bottom: -500px;
+  }
+  .svg-background,
+  .profile-container {
+    width: 350px;
+  }
 }

@@ -17,6 +17,7 @@ hr {
 }
 :root {
   overflow: hidden;
+  margin: 0px;
 }
 .container {
   background-color: darkcyan;
